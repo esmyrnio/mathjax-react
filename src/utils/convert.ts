@@ -20,7 +20,7 @@ RegisterHTMLHandler(adaptor);
 //  Create input and output jax and a document using them on the content from
 //  the HTML file (see:
 //  https://github.com/mathjax/MathJax-demos-node/blob/master/direct/tex2svg)
-const tex = new TeX({ packages: ["base", "ams"] });
+const tex = new TeX({ packages: ["base", "ams","xcolor"] });
 const mathml = new MathML({});
 const svg = new SVG({ fontCache: "none" });
 const markErrors = [STATE.TYPESET + 1, null, onError];
